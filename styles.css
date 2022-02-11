@@ -6,13 +6,13 @@ html {
   line-height: none;
 }
 
-.contenido{
+.content{
 
   margin: 0 auto;
   text-align: center;
 }
 
-.miBoton{
+.miButton{
   
   margin: 30px 0px;
   border-radius: 5px;
@@ -22,11 +22,11 @@ html {
   
 }
 
-.miBoton:hover{
+.miButton:hover{
   background-color: rgb(250, 66, 34);
 }
 
-.carta{
+.card{
     margin-top: 20px;
     background-color: white;
     width: 250px;
@@ -40,7 +40,7 @@ html {
     
 }
 
-.numero {
+.number {
   font-weight: 800;
   font-size: 80px;
   margin: 0 auto;
@@ -49,13 +49,13 @@ html {
   margin-top: 50px;
 }
 
-.icono1 {
+.icon1 {
   font-size: 80px;
   line-height: 70px;
    
 }
 
-.icono2{
+.icon2{
 
  font-size: 80px;
  float: right;
@@ -65,7 +65,7 @@ html {
   
 }
 
-.pintaRojo{
+.printRed{
   color: red;
   
 }

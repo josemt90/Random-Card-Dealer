@@ -1,43 +1,43 @@
 window.onload = function () {
   //write your code here
 
-  document.querySelector(".miBoton").addEventListener("click", cambiaCarta)
+  document.querySelector(".miButton").addEventListener("click", changeCard)
 
 
 };
 
 
-let cambiaCarta = () =>{
+let changeCard = () =>{
 
   //Creamos los arrays
-  let numero = ["A", "2", "3", "4", " 5", "6", "7", "8", "9", "10", "J", "K"];
-  let iconos = ["♦", "♥", "♠", "♣"];
+  let number = ["A", "2", "3", "4", " 5", "6", "7", "8", "9", "10", "J", "K"];
+  let icons = ["♦", "♥", "♠", "♣"];
 
 
   //Cambiamos el resultado del h1 por un valor del array numero aleatorio
-  document.querySelector(".numero").innerHTML = numero[rand(numero)];  // la funcion que devuelve un numero aleatorio esta abajo del todo (fila:44)
+  document.querySelector(".number").innerHTML = number[rand(number)];  // la funcion que devuelve un numero aleatorio esta abajo del todo (fila:44)
 
   //introducimos en una variable un icono aleatorio
-  let randIcon = iconos[rand(iconos)];
+  let randIcon = icons[rand(icons)];
 
 
   // si recibe el corazon o el diamante añade una clase que los pinta de rojo
   if (randIcon === "♥" || randIcon === "♦") {
 
-    document.querySelector(".icono1").classList.add("pintaRojo")
-    document.querySelector(".icono2").classList.add("pintaRojo")
+    document.querySelector(".icon1").classList.add("printRed")
+    document.querySelector(".icon2").classList.add("printRed")
 
 
   }else if (randIcon === "♠" || randIcon === "♣"){  // Si son los otros dos, borra la clase que pinta de rojo
 
-    document.querySelector(".icono1").classList.remove("pintaRojo")
-    document.querySelector(".icono2").classList.remove("pintaRojo")
+    document.querySelector(".icon1").classList.remove("printRed")
+    document.querySelector(".icon2").classList.remove("printRed")
 
   }
 
   //cambiamos los iconos
-  document.querySelector(".icono1").innerHTML = randIcon;
-  document.querySelector(".icono2").innerHTML = randIcon;
+  document.querySelector(".icon1").innerHTML = randIcon;
+  document.querySelector(".icon2").innerHTML = randIcon;
 
 }
 
